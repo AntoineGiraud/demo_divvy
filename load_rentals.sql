@@ -15,16 +15,17 @@ SELECT getvariable('path_input');
 ----------------------------------------------
 
 -- create or replace table raw.raw_achats as
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/rentals_v1/Divvy_Trips_2019_Q2.csv');
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/rentals_v1/Divvy_Trips_2018_Q3.csv');
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/rentals_v1/Divvy_Trips_2019_Q4.csv');
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/Divvy_Trips_2020_Q1.csv');
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/202412-divvy-tripdata.csv');
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v1/Divvy_Trips_2019_Q2.csv');
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v1/Divvy_Trips_2018_Q3.csv');
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v1/Divvy_Trips_2019_Q4.csv');
+--v2
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v2/Divvy_Trips_2020_Q1.csv');
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v2/202412-divvy-tripdata.csv');
 
 create or replace table raw_rentals.raw_rentals_v2 as
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/rentals_v2/*.csv');
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v2/*.csv');
 create or replace table raw_rentals.raw_rentals_v1 as
- SELECT * FROM read_csv(getvariable('path_input') || 'rentals/rentals_v1/*.csv');
+ SELECT * FROM read_csv(getvariable('path_input') || 'rentals_v1/*.csv');
 
 
 
