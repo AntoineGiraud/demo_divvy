@@ -1,0 +1,5 @@
+"ride_id","rideable_type","started_at","ended_at","start_station_name","start_station_id","end_station_name","end_station_id","start_lat","start_lng","end_lat","end_lng","member_casual"
+"6C960DEB4F78854E","electric_bike","2024-12-31 01:38:35.018","2024-12-31 01:48:45.775","Halsted St & Roscoe St","TA1309000025","Clark St & Winnemac Ave","TA1309000035",41.9436315,-87.6490833,41.973347640473044,-87.6678554713726,"member"
+"C0913EEB2834E7A2","classic_bike","2024-12-21 18:41:26.478","2024-12-21 18:47:33.871","Clark St & Wellington Ave","TA1307000136","Halsted St & Roscoe St","TA1309000025",41.9364968219,-87.6475386582,41.9436315,-87.6490833,"member"
+"848A37DD4723078A","classic_bike","2024-12-21 11:41:01.664","2024-12-21 11:52:45.094","Sheridan Rd & Montrose Ave","TA1307000107","Broadway & Barry Ave","13137",41.96167,-87.65464,41.93758231600629,-87.6440978050232,"member"
+"3FA09C762ECB48BD","electric_bike","2024-12-26 13:07:27.526","2024-12-26 13:10:54.130","Aberdeen St & Jackson Blvd","13157","Green St & Randolph St*","chargingstx3",41.87772613,-87.65478743,41.883601657275165,-87.64862671494483,"member"
