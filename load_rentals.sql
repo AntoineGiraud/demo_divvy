@@ -80,8 +80,17 @@ FROM bdd_bikeshare.raw_rentals.raw_rentals_v2;
 -- explo rapido
 ----------------------------------------------
 select 
-  datetrunc('month', started_at) dt_mois,
-  count(1) nb_rentals
+  year(started_at) annee,
+  -- datetrunc('month', started_at) dt_mois,
+  count(1) nb_rentals,
+  count(distinct start_station_id) nb_stations,
+  count(distinct start_station_name) nb_station_name,
 from stg.rentals
-group by 1
+group by all
 order by 1
+
+----------------------------------------------
+-- offload rapido
+----------------------------------------------
+copy stg.rentals to 'C:\Users\antoi\Documents\codes\demo_bikeshare\output/divvy_rentals.parquet' (format parquet)
+
